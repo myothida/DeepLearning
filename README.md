@@ -19,3 +19,10 @@ To get a local copy of the repository, you need to clone it to your machine. Ope
 
 ```sh
 git clone [https://github.com/myothida/DeepLearning.git](https://github.com/myothida/DeepLearning.git)
+
+## Install the required libraries
+
+Before running the code examples, make sure to install the required libraries. You can do this by navigating to the cloned repository in your terminal and running the following command:
+```sh
+pip install -r requirements.txt
+
