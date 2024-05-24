@@ -15,10 +15,10 @@ I believe that hands-on learning is crucial for understanding, and thus, the exp
 
 ## Cloning the Repository
 
-To get a local copy of the repository, you need to clone it to your machine. Open your terminal and run the following command:
+To get a local copy of your forked repository, you need to clone it to your machine. Open your terminal and run the following command:
 
 ```sh
-git clone [https://github.com/myothida/DeepLearning.git](https://github.com/myothida/DeepLearning.git)
+git clone your forked repository
 
 ## Install the required libraries
 
