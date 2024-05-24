@@ -18,11 +18,14 @@ I believe that hands-on learning is crucial for understanding, and thus, the exp
 To get a local copy of your forked repository, you need to clone it to your machine. Open your terminal and run the following command:
 
 ```sh
-git clone your forked repository
+git clone <URL-of-your-forked-repository>
+```
 
-## Install the required libraries
+## Install Required Libraries
 
 Before running the code examples, make sure to install the required libraries. You can do this by navigating to the cloned repository in your terminal and running the following command:
+
 ```sh
 pip install -r requirements.txt
+```
 
