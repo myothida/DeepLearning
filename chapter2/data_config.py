@@ -48,7 +48,7 @@ def adjust_resale_price(df, cut_off_date='2024-04-01'):
     df = df[df['resale_price'] > 0]
     
     df = df.merge(df_RPI, on='month', how='left')
-    q4_rpi = df_RPI[df_RPI['month'] == '2023-01']['index'].values[0]
+    q4_rpi = df_RPI[df_RPI['month'] == '2024-03']['index'].values[0]
     df['adjusted_price'] = q4_rpi* df['resale_price'] / df['index'] 
     return df
 
