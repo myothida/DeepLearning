@@ -23,10 +23,10 @@ def save_dataset_info(df, fname):
             'Resale Price of the flat sold'
         ]
     dataset_info['Description'] = description
-    dataset_info.to_csv('../data/'+fname, index=False)
+    dataset_info.to_csv('./data/'+fname, index=False)
 
 def read_resale_price_index():
-    df_RPI = pd.read_csv('../data/HDBRPIMonthly.csv')
+    df_RPI = pd.read_csv('./data/HDBRPIMonthly.csv')
     df_RPI = df_RPI.iloc[:-3, :].copy()
     extended_date_range = pd.date_range(start='2023-01', end='2024-03', freq='MS')
     extended_formatted_dates = extended_date_range.strftime('%Y-%m').tolist()
