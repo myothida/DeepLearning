@@ -38,3 +38,7 @@ def preprocess_category(df, column):
     df[column] = df[column].astype('category')
     df[column] = df[column].cat.codes
     return df
+
+def preprocess_onehot(df, column):
+    df = pd.get_dummies(df, columns=[column])
+    return df
