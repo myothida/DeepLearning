@@ -32,7 +32,7 @@ The dataset used for this project is obtained from the Singapore government's op
 1. **Data Collection**: Acquire the dataset from the provided URL, ensuring it includes all relevant attributes such as flat type, location, floor area, remaining lease, and transaction date.
 2. **Data Preprocessing**: Clean the data to handle missing values, outliers, and inconsistencies. Transform categorical variables into numerical formats where necessary.
 3. **Feature Engineering**: Select and engineer features that are most likely to influence resale prices. This may include creating new variables based on existing ones or transforming variables to better capture their relationships.
-4. **Model Selection**: Evaluate multiple regression models, such as Linear Regression, Decision Trees, Random Forest, and Gradient Boosting, to identify the best-performing model.
+4. **Model Selection**: MLP is used in this project.
 5. **Model Training and Validation**: Split the data into training and validation sets. Train the selected models on the training set and validate their performance using appropriate metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
 6. **Hyperparameter Tuning**: Optimize the chosen model's hyperparameters to improve prediction accuracy.
 7. **Model Evaluation**: Assess the final model's performance on a test set to ensure it generalizes well to unseen data.
