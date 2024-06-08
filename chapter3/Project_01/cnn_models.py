@@ -24,7 +24,7 @@ class cnnModels:
         return model
     
     def convnet(self):
-        model = keras.applications.Xception(weights='imagenet')
+        model = keras.applications.ConvNeXtTiny(weights='imagenet')
         return model   
 
     
