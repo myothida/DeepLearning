@@ -8,7 +8,7 @@ from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predi
 class cnnModels:
     def __init__(self):
         self.models = {'ResNet50': self.resnet(), 'VGGNet16': self.vggnet(), 
-                       'InceptionV3': self.inception(), 'ConvNet': self.convnet(), 
+                       'InceptionV3': self.inception(), 'ConvNeXt': self.convnet(), 
                        'EfficientNet': self.efficientnet()}
 
     def resnet(self):       
