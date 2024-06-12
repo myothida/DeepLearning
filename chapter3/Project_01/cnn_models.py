@@ -3,7 +3,7 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import keras
 import numpy as np
 from keras.preprocessing.image import img_to_array # type: ignore
-from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions # type: ignore
+from keras.applications.resnet50 import preprocess_input, decode_predictions    # type: ignore
 
 class cnnModels:
     def __init__(self):
@@ -12,7 +12,7 @@ class cnnModels:
                        'EfficientNet': self.efficientnet()}
 
     def resnet(self):       
-        model = ResNet50(weights='imagenet')
+        model = keras.applications.ResNet50(weights='imagenet')
         return model
     
     def vggnet(self):
@@ -24,7 +24,7 @@ class cnnModels:
         return model
     
     def convnet(self):
-        model = keras.applications.Xception(weights='imagenet')
+        model = keras.applications.ConvNeXtTiny(weights='imagenet')
         return model   
 
     
@@ -37,7 +37,7 @@ class cnnModels:
             return self.models[name]
         else:
             raise ValueError(f"Model '{name}' does not exist.")        
-
+    
         
     def classify_image(self, name, img):
         model = self.get_model(name)      
@@ -45,6 +45,6 @@ class cnnModels:
         x = img_to_array(img)
         x = np.expand_dims(x, axis=0)
         x = preprocess_input(x)
-        preds = model.predict(x)
+        preds = model.predict(x, verbose=0)
         return decode_predictions(preds, top=1)
 
