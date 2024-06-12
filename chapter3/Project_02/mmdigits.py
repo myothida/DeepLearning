@@ -6,7 +6,7 @@ def load_dataset(dataset_dir):
     labels = []
     desired_width = 64
     desired_height = 64
-    top_crop = 20
+    top_crop = 5
     bottom_crop = 20
     left_crop = 50
     right_crop = 50
