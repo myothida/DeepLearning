@@ -8,7 +8,7 @@ def load_dataset(dataset_dir):
     desired_height = 64
     top_crop = 5
     bottom_crop = 20
-    left_crop = 50
+    left_crop = 50  
     right_crop = 50
     
 
@@ -31,6 +31,7 @@ def load_dataset(dataset_dir):
                 # Resize the image to a fixed size if needed
                 # Crop the image if needed
                 image = image[top_crop:image.shape[0]-bottom_crop, left_crop:image.shape[1]-right_crop]
+                print(image.shape)
                 image = cv2.resize(image, (desired_width, desired_height))
 
                 # Add the image and label to the lists
